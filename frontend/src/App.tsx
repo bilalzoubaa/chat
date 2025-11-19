@@ -76,7 +76,12 @@ function App() {
         <div className="w-full max-w-lg border border-white/10 bg-white/5 backdrop-blur-sm rounded-2xl shadow-2xl p-8">
           <div className="mb-6">
             <div className="flex items-center gap-2">
-              <img src="/chat-logo.svg" alt="Chat IA" className="h-10 w-10 md:h-12 md:w-12 shrink-0" />
+              <img
+                src="/home-logo.png"
+                onError={(e) => { e.currentTarget.src = '/chat-logo.svg' }}
+                alt="Chat IA"
+                className="h-10 w-10 md:h-12 md:w-12 shrink-0"
+              />
               <div className="text-3xl font-bold tracking-tight">Chat IA</div>
             </div>
             <div className="text-sm text-slate-300">Rejoignez une salle et commencez à discuter</div>
